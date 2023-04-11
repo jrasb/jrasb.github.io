@@ -1,4 +1,15 @@
-main {
-    color: #fefefe;
-    background: #222;
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: blanchedalmond;
+}
+
+#root-section {
+    margin: 10px;
+}
+
+footer {
+    bottom: 0;
 }
