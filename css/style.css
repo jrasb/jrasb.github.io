@@ -1,13 +1,16 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    color: #d3d7cf;
 }
 
-a {
+a, i{
     text-decoration: none;
+    font-weight: bold;
+    color: #4e9a06;
 }
 
 body {
-    background: blanchedalmond;
+    background: #000;
 }
 
 #root-section {
