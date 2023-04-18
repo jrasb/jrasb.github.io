@@ -1,5 +1,7 @@
 console.log("main.js loaded");
 
+const bashAnimation = document.querySelector('.typed');
+
 const root = document.querySelector('#root-div');
 const rootChildren = root.childNodes;
 
@@ -34,6 +36,7 @@ linksChildren.item(1).addEventListener('click', () => {
 });
 
 // Disables the display on load of the page
+root.classList.add('d-none');
 aboutme.classList.add('d-none');
 contact.classList.add('d-none');
 links.classList.add('d-none');
@@ -55,3 +58,7 @@ linksChildren.forEach((e,i) => {
         e.classList.add('d-none');
     }
 });
+
+bashAnimation.addEventListener('animationend', (e) => {
+    root.classList.remove('d-none');
+})
