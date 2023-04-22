@@ -14,13 +14,18 @@ const contact = document.querySelector(`#${rootChildren.item(5).id}`);
 const contactChildren = contact.childNodes;
 
 // links
-const links = document.querySelector(`#${rootChildren.item(7).id}`)
+const links = document.querySelector(`#${rootChildren.item(7).id}`);
 const linksChildren = links.childNodes;
+
+// projects
+const projects = document.querySelector(`#${rootChildren.item(9).id}`);
+const projectsChildren = projects.childNodes;
 
 rootChildren.item(1).addEventListener('click', () => {
     aboutme.classList.toggle('d-none');
     contact.classList.toggle('d-none');
     links.classList.toggle('d-none');
+    projects.classList.toggle('d-none');
 });
 
 aboutmeChildren.item(1).addEventListener('click', () => {
@@ -35,11 +40,16 @@ linksChildren.item(1).addEventListener('click', () => {
     linksChildren.item(3).classList.toggle('d-none');
 });
 
+projectsChildren.item(1).addEventListener('click', () => {
+    projectsChildren.item(3).classList.toggle('d-none');
+});
+
 // Disables the display on load of the page
 root.classList.add('d-none');
 aboutme.classList.add('d-none');
 contact.classList.add('d-none');
 links.classList.add('d-none');
+projects.classList.add('d-none');
 
 aboutmeChildren.forEach((e,i) => {
     if (i == 3) {
@@ -54,6 +64,12 @@ contactChildren.forEach((e,i) => {
 });
 
 linksChildren.forEach((e,i) => {
+    if (i == 3) {
+        e.classList.add('d-none');
+    }
+});
+
+projectsChildren.forEach((e, i) => { 
     if (i == 3) {
         e.classList.add('d-none');
     }
