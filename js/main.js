@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("main.js loaded");
 
 const bashAnimation = document.querySelector('.typed');
