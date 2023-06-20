@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects in Detail -- okryp</title>
+
+    <!-- Bootstrap stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/projects.js"></script>
+</head>
+
+<body>
+    <section id="header-section">
+        <div class="container-fluid">
+            <h3><i class="bi bi-braces fs-3"></i> OKRYP</h3>
+        </div>
+    </section>
+    <div id="fancy-effect-section">
+        <div class="container-fluid">
+            <div class="bash">
+                <span class="bash-green">okryp@github </span><span class="bash-blue">~ $ </span><span class="typed">cat projects.md</span>
+            </div>
+        </div>
+    </div><br>
+    <section id="project-section">
+        <div class="container-fluid">
+            <div id="hoger-lager">
+                <h1>HOGER LAGER <a target="_blank" href="https://okryp.github.io/Hoger-Lager-Project/"><i class="bi bi-arrow-return-right"></i></a></h1>
+                <p>
+                    The hoger lager project was the first project of the software developer course.
+                    During production I learned the basics of HTML5/CSS and JS.
+                    This project was made completely without the use of any frameworks and was very
+                    "hacked together".
+                    <br /><br />
+                    The project is a basic game of guessing whether or not the computer rolled a higher or lower
+                    dice roll than the player. The player sees their dice after pressing "roll the dice". The option to
+                    roll will no longer be allowed without the use of the console to prevent cheating. 
+                </p>
+                <div class="container">
+                    <img class="img-fluid" src="./img/hoger-lager-screenshot.png" alt="screenshot of the game higher-lower">
+                </div>
+            </div>
+            <br />
+            <div id="tic-tac-toe">
+                <h1>TIC TAC TOE <a target="_blank" href="https://okryp.github.io/tic-tac-toe/"><i class="bi bi-arrow-return-right"></i></a></h1>
+                <p>
+                    Cult classic pen and paper game of tic tac toe, now on the personal computer. The game has been once again
+                    made with no frameworks or libraries, just vanilla JS and basic HTML5/CSS. This project was our second of 
+                    the year and was our introduction into using display: grid.
+                    <br /><br />
+                    The rules are simple enough. The person who gets 3 in a row, column, or diagonal wins. I made it that it keeps
+                    track of the scores and names in the localStorage.
+                </p>
+                <div class="container">
+                    <img class="img-fluid" src="./img/tic-tac-toe.png" alt="screenshot of the tic tac toe project">
+                </div>
+            </div>
+            <br />
+            <div id="game-of-life">
+                <h1>GAME OF LIFE <a target="_blank" href="https://okryp.github.io/game-of-life/"><i class="bi bi-arrow-return-right"></i></a></h1>
+                <p>
+                    A classic cellular automata "0 player" game. Popularised by the late John Conway, English mathematician.
+                    The "game" is a 32x32 grid of "dead" cells which switch their state upon getting clicked. These cells then,
+                    based on preset rules, carry out their life according to said rules. I added 2 buttons, one to go one generation
+                    at a time, and another that allows you to generate 100 generations.
+                    <br /><br />
+                    <h3>Current Ruleset:</h3>
+                    1. If a cell is is alive surrounded by 3 cells in its direct neighbourhood, it stays alive. <br />
+                    2. If a cell is alive and has 2 or fewer neighbours who are alive, the cell dies of underpopulation. <br />
+                    3. If a cell is alive and has 4 or more neighbours who are alive, the cell dies of overpopulation. <br />
+                    4. If a cell is dead, and has 3 neighbours, it comes to life. <br />
+                </p>
+                <div class="container">
+                    <img class="img-fluid" src="./img/gol.gif" alt="gif of the game of life project in action">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
